@@ -6,10 +6,10 @@ import scala.language.postfixOps
 object main {
 
   @main def day1() = {
-    var input = "1000\n2000\n3000\n\n4000\n\n5000\n6000\n\n7000\n8000\n9000\n\n10000"
+    //var input = "1000\n2000\n3000\n\n4000\n\n5000\n6000\n\n7000\n8000\n9000\n\n10000"
 
     val fileName = "C:\\Users\\Deshawn\\Projekte\\Scalaprojects\\AdventOfcode\\src\\main\\scala\\input.txt"
-    input = Source.fromFile(fileName).mkString
+    var input = Source.fromFile(fileName).mkString
 
     var j = 0
     var cal = ""
