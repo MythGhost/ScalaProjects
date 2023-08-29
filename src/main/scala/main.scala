@@ -17,8 +17,8 @@ object main {
     var mostCal = 0
 
     input = input.replaceAll("\r", "\n")
-    var allCals: ListBuffer[Int] = ListBuffer()
-    var topThreeCals: ListBuffer[Int] = ListBuffer()
+    val allCals: ListBuffer[Int] = ListBuffer()
+    val topThreeCals: ListBuffer[Int] = ListBuffer()
 
       for i <- input
       do
@@ -40,15 +40,12 @@ object main {
 
           calElve = calElve + Integer.parseInt(cal)
           cal = ""
-
-
         else if !i.equals('\n') then
           cal = cal.appended(i)
 
         j = j + 1
 
       //part2
-      //allCals = allCals.sortWith((a: Int, b: Int) => a == b)
       allCals.sorted
       println(allCals)
       topThreeCals.addAll(allCals.reverse.take(3))
